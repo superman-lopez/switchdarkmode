@@ -13,7 +13,7 @@ The schedule can be easily adjusted by editing the plist. For example:
 nano ~/Library/LaunchAgents/local.switchdarkmode.plist
 ```
 Change the timing in the following section:
-```
+```xml
 	<array>
 		<dict>
 			<key>Hour</key>
