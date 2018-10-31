@@ -3,3 +3,29 @@ A Launchd plist with an Applescript to switch on schedule between Dark Mode and 
 ```
 curl -o ~/Library/LaunchAgents/local.switchdarkmode.plist https://raw.githubusercontent.com/superman-lopez/switchdarkmode/master/local.switchdarkmode.plist && launchctl load ~/Library/LaunchAgents/local.switchdarkmode.plist
 ```
+The schedule can be easily adjusted by editing the plist. For example: 
+```
+nano ~/Library/LaunchAgents/local.switchdarkmode.plist
+```
+Change the timing in the following section:
+```
+	<array>
+		<dict>
+			<key>Hour</key>
+			<integer>21</integer>
+			<key>Minute</key>
+			<integer>00</integer>
+		</dict>
+		<dict>
+			<key>Hour</key>
+			<integer>7</integer>
+			<key>Minute</key>
+			<integer>15</integer>
+		</dict>
+	</array>
+```
+
+After that unload and reload the plist for immediate effect: 
+```
+launchctl unload ~/Library/LaunchAgents/local.switchdarkmode.plist && launchctl load ~/Library/LaunchAgents/local.switchdarkmode.plist
+```
