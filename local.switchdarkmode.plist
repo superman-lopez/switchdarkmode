@@ -8,8 +8,7 @@
 	<array>
 		<string>/bin/bash</string>
 		<string>-c</string>
-		<string>osascript -e 'tell application "System Events" to tell appearance preferences to set dark mode to not dark mode'
-</string>
+		<string>osascript -e 'tell application "System Events" to tell appearance preferences to set dark mode to not dark mode'</string>
 	</array>
 	<key>StartCalendarInterval</key>
 	<array>
