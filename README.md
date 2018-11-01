@@ -34,3 +34,9 @@ After that unload and reload the plist for immediate effect:
 ```
 launchctl unload ~/Library/LaunchAgents/local.switchdarkmode.plist && launchctl load ~/Library/LaunchAgents/local.switchdarkmode.plist
 ```
+
+To uninstall this simply run:
+```
+launchctl unload ~/Library/LaunchAgents/local.switchdarkmode.plist && rm ~/Library/LaunchAgents/local.switchdarkmode.plist
+```
+
