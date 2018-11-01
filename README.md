@@ -3,7 +3,7 @@ A Launchd plist with an Applescript to switch on schedule between Dark Mode and 
 ```
 curl -o ~/Library/LaunchAgents/local.switchdarkmode.plist https://raw.githubusercontent.com/superman-lopez/switchdarkmode/master/local.switchdarkmode.plist && launchctl load ~/Library/LaunchAgents/local.switchdarkmode.plist
 ```
-That's all that is needed for it to work!
+That's all that is needed for it to work!  Optionally:
 
 If you are keen to test, it's possible to invoke the command immediately rather than wait for the scheduled run:
 ```
